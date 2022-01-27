@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <script src="./app.js"></script>
+    <title>Spotify</title>
+</head>
+<body>
+    <div class="profile_section">
+        <div class="profile">
+            <div class="photo">
+                <svg fill="currentColor" viewBox="0 0 18 20" xmlns="http://www.w3.org/2000/svg" data-testid="user-icon"><path d="M15.216 13.717L12 11.869C11.823 11.768 11.772 11.607 11.757 11.521C11.742 11.435 11.737 11.267 11.869 11.111L13.18 9.57401C14.031 8.58001 14.5 7.31101 14.5 6.00001V5.50001C14.5 3.98501 13.866 2.52301 12.761 1.48601C11.64 0.435011 10.173 -0.0879888 8.636 0.0110112C5.756 0.198011 3.501 2.68401 3.501 5.67101V6.00001C3.501 7.31101 3.97 8.58001 4.82 9.57401L6.131 11.111C6.264 11.266 6.258 11.434 6.243 11.521C6.228 11.607 6.177 11.768 5.999 11.869L2.786 13.716C1.067 14.692 0 16.526 0 18.501V20H1V18.501C1 16.885 1.874 15.385 3.283 14.584L6.498 12.736C6.886 12.513 7.152 12.132 7.228 11.691C7.304 11.251 7.182 10.802 6.891 10.462L5.579 8.92501C4.883 8.11101 4.499 7.07201 4.499 6.00001V5.67101C4.499 3.21001 6.344 1.16201 8.699 1.00901C9.961 0.928011 11.159 1.35601 12.076 2.21501C12.994 3.07601 13.5 4.24301 13.5 5.50001V6.00001C13.5 7.07201 13.117 8.11101 12.42 8.92501L11.109 10.462C10.819 10.803 10.696 11.251 10.772 11.691C10.849 12.132 11.115 12.513 11.503 12.736L14.721 14.585C16.127 15.384 17.001 16.884 17.001 18.501V20H18.001V18.501C18 16.526 16.932 14.692 15.216 13.717Z"></path></svg>
+                <p>PROFILE</p>
+                <h1>Vinay</h1>
+                <p class="hel">1 Public Playlist . <span style="color: #fff;">48 following</span> </p>
+            </div>
+        </div>
+        <span style="font-size:30px;cursor:pointer" class="ham" onclick="openNav()">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="">
+                <svg viewBox="0 0 1134 340" class="spotify-logo--text"><title>Spotify</title><path fill="currentColor" d="M8 171c0 92 76 168 168 168s168-76 168-168S268 4 176 4 8 79 8 171zm230 78c-39-24-89-30-147-17-14 2-16-18-4-20 64-15 118-8 162 19 11 7 0 24-11 18zm17-45c-45-28-114-36-167-20-17 5-23-21-7-25 61-18 136-9 188 23 14 9 0 31-14 22zM80 133c-17 6-28-23-9-30 59-18 159-15 221 22 17 9 1 37-17 27-54-32-144-35-195-19zm379 91c-17 0-33-6-47-20-1 0-1 1-1 1l-16 19c-1 1-1 2 0 3 18 16 40 24 64 24 34 0 55-19 55-47 0-24-15-37-50-46-29-7-34-12-34-22s10-16 23-16 25 5 39 15c0 0 1 1 2 1s1-1 1-1l14-20c1-1 1-1 0-2-16-13-35-20-56-20-31 0-53 19-53 46 0 29 20 38 52 46 28 6 32 12 32 22 0 11-10 17-25 17zm95-77v-13c0-1-1-2-2-2h-26c-1 0-2 1-2 2v147c0 1 1 2 2 2h26c1 0 2-1 2-2v-46c10 11 21 16 36 16 27 0 54-21 54-61s-27-60-54-60c-15 0-26 5-36 17zm30 78c-18 0-31-15-31-35s13-34 31-34 30 14 30 34-12 35-30 35zm68-34c0 34 27 60 62 60s62-27 62-61-26-60-61-60-63 27-63 61zm30-1c0-20 13-34 32-34s33 15 33 35-13 34-32 34-33-15-33-35zm140-58v-29c0-1 0-2-1-2h-26c-1 0-2 1-2 2v29h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v58c0 23 11 35 34 35 9 0 18-2 25-6 1 0 1-1 1-2v-21c0-1 0-2-1-2h-2c-5 3-11 4-16 4-8 0-12-4-12-12v-54h30c1 0 2-1 2-2v-22c0-1-1-2-2-2h-30zm129-3c0-11 4-15 13-15 5 0 10 0 15 2h1s1-1 1-2V93c0-1 0-2-1-2-5-2-12-3-22-3-24 0-36 14-36 39v5h-13c-1 0-2 1-2 2v22c0 1 1 2 2 2h13v89c0 1 1 2 2 2h26c1 0 1-1 1-2v-89h25l37 89c-4 9-8 11-14 11-5 0-10-1-15-4h-1l-1 1-9 19c0 1 0 3 1 3 9 5 17 7 27 7 19 0 30-9 39-33l45-116v-2c0-1-1-1-2-1h-27c-1 0-1 1-1 2l-28 78-30-78c0-1-1-2-2-2h-44v-3zm-83 3c-1 0-2 1-2 2v113c0 1 1 2 2 2h26c1 0 1-1 1-2V134c0-1 0-2-1-2h-26zm-6-33c0 10 9 19 19 19s18-9 18-19-8-18-18-18-19 8-19 18zm245 69c10 0 19-8 19-18s-9-18-19-18-18 8-18 18 8 18 18 18zm0-34c9 0 17 7 17 16s-8 16-17 16-16-7-16-16 7-16 16-16zm4 18c3-1 5-3 5-6 0-4-4-6-8-6h-8v19h4v-6h4l4 6h5zm-3-9c2 0 4 1 4 3s-2 3-4 3h-4v-6h4z"></path></svg>
+            </a>
+            <div class="links">
+                <a href="#">
+                    <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI home-active-icon" viewBox="0 0 24 24"><path d="M21 22V7.174l-9.001-5.195L3 7.214V22h7v-7h4v7z"></path></svg>
+                    Home
+                </a>
+                <a href="#">
+                    <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI search-icon" viewBox="0 0 24 24"><path d="M16.387 16.623A8.47 8.47 0 0019 10.5a8.5 8.5 0 10-8.5 8.5 8.454 8.454 0 005.125-1.73l4.401 5.153.76-.649-4.399-5.151zM10.5 18C6.364 18 3 14.636 3 10.5S6.364 3 10.5 3 18 6.364 18 10.5 14.636 18 10.5 18z"></path></svg>
+                    Search
+                </a>
+                <a href="#">
+                    <svg role="img" height="24" width="24" class="Svg-sc-1bi12j5-0 hDgDGI collection-icon" viewBox="0 0 24 24"><path d="M13.66 4.097l-.913.406 7.797 17.513.914-.406L13.66 4.097zM3 22h1V4H3v18zm6 0h1V4H9v18z"></path></svg>
+                    Your Library
+                </a>
+                <div class="links2">
+                <a href="#">
+                    <div class="IKKDTlAtw1htuVSuLpLt"><svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 hDgDGI"><path d="M14 7H9V2H7v5H2v2h5v5h2V9h5z"></path><path fill="none" d="M0 0h16v16H0z"></path></svg></div>
+                    <span style="padding-left: 29px;">Created Playlist</span> 
+                </a>
+                <a href="#">
+                    <div class="FMNZJaO_Zs9C_4inzm52"><svg role="img" height="15" width="15" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-1bi12j5-0 hDgDGI"><path fill="none" d="M0 0h16v16H0z"></path><path d="M13.797 2.727a4.057 4.057 0 00-5.488-.253.558.558 0 01-.31.112.531.531 0 01-.311-.112 4.054 4.054 0 00-5.487.253c-.77.77-1.194 1.794-1.194 2.883s.424 2.113 1.168 2.855l4.462 5.223a1.791 1.791 0 002.726 0l4.435-5.195a4.052 4.052 0 001.195-2.883 4.057 4.057 0 00-1.196-2.883z"></path></svg></div>
+                    <span style="padding-left: 29px;"> Liked Songs</span>
+                </a>
+                </div>
+            </div>
+            <hr>
+          </div>
+    </div>
+
+    <div class="top_artist_container">
+        <div class="text">
+            <h1 class="top">Top artist this month</h1>
+            <p class="top_p">Only visible to you</p>
+        </div>
+        <div class="artists">
+            <div class="weekend">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab676161000051742f71b65ef483ed75a8b40437" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>The weeknd</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <a href="./lil_nas.html" class="lil_nas_link">
+                <div class="lil_nas">
+                    <div class="photo_de_art">
+                        <img src="https://i.scdn.co/image/ab67616100005174ab6bd6e450cbc7629a9a2381" alt="weekend">
+                    </div>
+                    <div class="play">
+                        <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                    </div>
+                    <div class="art_name">
+                        <h1>Lil Nas X</h1>
+                        <p>Artist</p>
+                    </div>
+                </div>
+            </a>
+            <div class="travis">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab676186000010167b9ce17f398332f59fb8a09e" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Travis Scott</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="eminem">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab67706c0000da849ee7a095aa96164af96048ab" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Eminem</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="miley">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab6761610000f178302f6e5dacd0dd1af0d97bc9" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Miley Cyrus</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="beyonce">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab6761610000f178d3d058be8485c8583703b6d2" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Beyoncé</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="posty">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab67706c0000da84e2fd5f0e2d896f0bdc768544" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Post Malone</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="favourate_container">
+        <div class="heading">
+            <h1 class="favor">Your favorite artists</h1>
+        </div>
+        <div class="artisto">
+            <div class="posty">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab67706c0000da84e2fd5f0e2d896f0bdc768544" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Post Malone</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="serhut">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab67616100005174548f9369334e810d1ed3f72e" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Serhat Durmus</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="drake">
+                <div class="photo_de_art">
+                    <img src="	https://i.scdn.co/image/ab676161000051749e46a78c5cd2f7a8e7669980" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Drake</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="x">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/85efa6892e724d72ac19e252570d81bb928ace85" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>XXXTENTACION</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="weekend">
+                <div class="photo_de_art">
+                    <img src="https://i.scdn.co/image/ab676161000051742f71b65ef483ed75a8b40437" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>The weeknd</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="billie">
+                <div class="photo_de_art">
+                    <img src="	https://i.scdn.co/image/ab67616100005174d8b9980db67272cb4d2c3daf" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Billie Eilish</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+            <div class="bazzi">
+                <div class="photo_de_art">
+                    <img src="
+                    https://i.scdn.co/image/ab67616100005174e016d0d0b7f954032253ea7e" alt="weekend">
+                </div>
+                <div class="play">
+                    <svg role="img" height="25" width="25" viewBox="0 0 24 24" class="but"><path d="M6 21l15.589-9L6 3z"></path></svg>
+                </div>
+                <div class="art_name">
+                    <h1>Bazzi</h1>
+                    <p>Artist</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
